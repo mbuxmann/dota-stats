@@ -4,7 +4,7 @@ get_heroes_images();
 function get_heroes_images(){
 
     const api = 'https://dotastats.bitvivaz.com/GetHeroes/';
-    
+    console.log('t');
     fetch(api)
         .then(response => response.json())
         .then(data => {

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/data.css">
+
+        <title>BitVivAZ DOTA 2 Stats</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a href="../index.html">
+                    <div class="title"> bitVivAZ DOTA STATS </div>
+                </a>
+            </div>
+            <div class="center-stats">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="hero-header">
+                            <div class="hero-name" id="hero-name"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="match-id-container drop-shadow">
+                            <div class="row">
+                                <div class="match-id-header">MATCH ID</div>
+                            </div>
+                            <div class="row">
+                                <div class="match-id" id="match-id"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="match-status-container drop-shadow">
+                            <div class="row">
+                                <div class="match-status-header">STATUS</div>
+                            </div>
+                            <div class="row">
+                                <div class="match-status" id="match-status"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hero-level-container drop-shadow">
+                            <div class="row">
+                                <div class="hero-level-header">HERO LEVEL</div>
+                            </div>
+                            <div class="row">
+                                <div class="hero-level" id="hero-level"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="game-mode-container drop-shadow">
+                            <div class="row">
+                                <div class="game-mode-header">GAME MODE</div>
+                            </div>
+                            <div class="row">
+                                <div class="game-mode" id="game-mode"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="duration-container drop-shadow">
+                            <div class="row">
+                                <div class="duration-header">DURATION</div>
+                            </div>
+                            <div class="row">
+                                <div class="duration" id="duration"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="match-date-container drop-shadow">
+                            <div class="row">
+                                <div class="match-date-header">DATE</div>
+                            </div>
+                            <div class="row">
+                                <div class="match-date" id="match-date"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="hero-stats-container drop-shadow">
+                            <div class="hero-stats-header">HERO STATS</div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Net Worth</div>
+                                    <div class="hero-value" id="net-worth"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Kills</div>
+                                    <div class="hero-value" id="kills"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Deaths</div>
+                                    <div class="hero-value" id="deaths"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Assists</div>
+                                    <div class="hero-value" id="assits"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Last Hits</div>
+                                    <div class="hero-value" id="last-hits"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Denies</div>
+                                    <div class="hero-value" id="denies"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">GPM</div>
+                                    <div class="hero-value" id="gpm"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">XPM</div>
+                                    <div class="hero-value" id="xpm"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Hero Damage</div>
+                                    <div class="hero-value" id="hero-damage"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Tower Damage</div>
+                                    <div class="hero-value" id="tower-damage"></div>
+                                </div>
+                            </div><div class="separator"></div>
+                            <div class="row">
+                                <div class="hero-stats-col">
+                                    <div class="hero-stat">Healing</div>
+                                    <div class="hero-value" id="healing"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1">
+                        <div class="average-container drop-shadow">
+                            <div class="average-header">AVG</div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-net-worth"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-kills"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-deaths"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-assists"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-last-hits"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-denies"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-gpm"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-xpm"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-hero-damage"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-tower-damage"></div>
+                            </div>
+                            <div class="separator"></div>
+                            <div class="row">
+                                <div class="average-stats-col" id="avg-hero-healing"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="recent-matches-container drop-shadow">
+                            <div class="row">
+                                <div class="recent-matches-header">RECENT MATCHES</div>
+                                <div class="row" id="recent-matches-row-one">
+                                </div>
+                                </div>
+                        </div>
+
+                        <div class="ability-build-container drop-shadow margin-top">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="ability-build-header">ABILITY BUILD</div>
+                                </div>
+                                <div class="row" id="ability-build">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="win-rate-container drop-shadow">
+                        <div class="row">
+                            <div class="win-rate-header">WIN RATE</div>
+                        </div>
+                        <div class="row">
+                                <canvas id="win-rate-chart"></canvas>
+                        </div>
+                        </div>
+                        <div class="item-build-container drop-shadow margin-top">
+                        <div class="row">
+                            <div class="item-build-header">ITEM BUILD</div>
+                        </div>
+                        <div class="row" id="item-build">
+                        </div>
+                        </div>
+                        <div class="backpack-container drop-shadow margin-top">
+                            <div class="row">
+                                <div class="backpack-header">BACKPACK</div>
+                            </div>
+                            <div class="row" id="backpack">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <a href="https://github.com/bitVivAZ" target="_blank">
+                    <div class="madeby"> Made By BitVivAZ </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <script type="text/javascript" src="../JavaScript/cssData.js"></script>
+        <script type="text/javascript" src="../JavaScript/CircleChart.js"></script>
+        <script type="text/javascript" src="../JavaScript/data.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

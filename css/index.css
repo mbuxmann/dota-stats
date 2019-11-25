@@ -1,0 +1,91 @@
+.{
+    padding:0px;
+    margin:0px;
+
+}
+
+* {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+body {
+    background-image: url('../pictures/heroes_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    cursor: pointer;
+}
+
+.header {
+    left: 0;
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    background: #1D2233;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    background: #1D2233;
+    box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.title {
+    position: absolute;
+    width: 243px;
+    height: 28px;
+    left: 12px;
+    top: 11px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 1);
+
+
+}
+
+.center-heroes {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hero{
+    margin:5px;
+}
+
+.heropic {
+    width: 102.61px;
+    height: 57.55px;
+}
+
+.row {
+    width: 80vw;
+}
+
+.madeby {
+    position: absolute;
+    width: 199px;
+    height: 28px;
+    right: 12px;
+    bottom: 11px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 1);
+
+}
+

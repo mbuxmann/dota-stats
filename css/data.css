@@ -1,0 +1,228 @@
+:root {
+    --header-color: #1D2233;
+    --main-color: #394264;
+    --secondary-color: #5C627C;
+}
+
+*{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+body {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    left: 0;
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    background: var(--header-color);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    background: var(--header-color);
+    box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.drop-shadow {
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.title {
+    position: absolute;
+    width: 243px;
+    height: 28px;
+    left: 12px;
+    top: 11px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 1);
+
+}
+
+.center-stats {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 70vw;
+}
+
+.row {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100%;
+}
+
+.col, .col-xl-1, .col-xl-6 {
+    padding: 6px !important;
+}
+
+.margin-top {
+    margin-top: 12px !important;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.hero-header {
+    height: 50px;
+    width: 100%;
+    background: var(--header-color);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.hero-name {
+    text-align:center;
+    line-height: 50px;
+    font-size: 23px;
+}
+
+.match-id-header, .match-status-header, .hero-level-header, .game-mode-header,
+.duration-header, .match-date-header, .hero-stats-header, .average-header,
+.recent-matches-header, .ability-build-header, .win-rate-header, .item-build-header,
+.backpack-header {
+    font-size: 23px;
+    height: 50px;
+    width: 100%;
+    background: var(--header-color);
+    text-align: center;
+    line-height: 50px;
+}
+
+.match-status, .game-mode, .match-date, .normalblue {
+    background: var(--main-color) !important;
+}
+
+.match-id, .match-status, .hero-level, .game-mode, .duration, .match-date {
+    font-size: 17px;
+    height: 50px;
+    width: 100%;
+    background: var(--secondary-color);
+    text-align: center;
+    line-height: 50px;
+}
+
+.hero-stats-col {
+    font-size: 17px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background: var(--main-color);
+
+}
+
+.average-stats-col {
+    font-size: 17px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background: var(--secondary-color);
+    text-align: center;
+}
+
+.hero-stat {
+    float: left;
+    position: relative;
+    left: 15%;
+}
+
+.hero-value {
+    float: right;
+    width: 20%;
+    position: relative;
+    right: 15%;
+    text-align: center;
+}
+
+.separator {
+    height: 6px;
+    width: 100%;
+    background: var(--header-color);
+}
+
+.match-tab {
+    height: 50px;
+    width:100%;
+    background: var(--secondary-color);
+    text-align: center;
+    line-height: 50px;
+}
+
+.match-tab-selected {
+    background:  var(--main-color);
+    box-shadow: inset 0px 4px 7px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.match-tab:hover {
+    background: var(--main-color);
+    box-shadow: inset 0px 4px 7px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-lvl-col {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: var(--secondary-color);
+}
+
+.hero-ability-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.img-cover {
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.item-col {
+    width: 33.33%;
+    box-shadow: inset 0px 0px 20px 4px rgba(0,0,0,0.5);
+    background: var(--main-color);
+}
+
+.madeby {
+    position: absolute;
+    width: 199px;
+    height: 28px;
+    right: 12px;
+    bottom: 11px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 1);
+
+}
+
+#win-rate-chart{
+    background: var(--main-color);
+}

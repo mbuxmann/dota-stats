@@ -516,7 +516,7 @@ function add_to_ability_build(abilities){
 
 function get_win_rate(hero_id){
 
-    const api = "https://dotaapi.herokuapp.com/GetWinRate/?matches_requested=30&hero_id=" + hero_id;
+    const api = "https://dotastats.bitvivaz.com/GetWinRate/?matches_requested=30&hero_id=" + hero_id;
 
     fetch(api)
         .then(response => response.text())

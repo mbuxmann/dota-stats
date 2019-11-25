@@ -1,5 +1,5 @@
 var heroName = localStorage.getItem("hero_name");
-console.log(heroName);
+
 set_css_data(cssData, heroName);
 set_title(heroName);
 get_hero_id();

@@ -16,7 +16,7 @@ function get_heroes_images(){
                 let hero_name = data[x]['hero_name'];
                 let hero_pic = "http://cdn.dota2.com/apps/dota2/images/heroes/" +
                     hero_name + "_lg.png";
-                let hero_page = "hero-stats.html";
+                let hero_page = "/hero-stats.html";
 
                 var heroDiv = document.createElement("div");
                 heroDiv.className = "hero_" + hero_name + " hero";

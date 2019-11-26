@@ -935,7 +935,22 @@ var cssData = {
         "main-color": "#711f07",
         "secondary-color": "#aa2f0b",
         "none": "../pictures/none002.png"
-    }
+    },
 
+    "void_spirit": {
+        "background_img": "url('http://cdn.dota2.com/apps/dota2/images/outlanders/wallpaper/wallpaper_void_large.png')",
+        "header-color": "#1D2233",
+        "main-color": "#394264",
+        "secondary-color": "#5C627C",
+        "none": "../picturesnone001.png"
+    },
+
+    "snapfire": {
+        "background_img": "url('http://cdn.dota2.com/apps/dota2/images/outlanders/wallpaper/wallpaper_snapfire_large.png')",
+        "header-color": "#4b1505",
+        "main-color": "#711f07",
+        "secondary-color": "#aa2f0b",
+        "none": "../pictures/none002.png"
+    },
 
 }

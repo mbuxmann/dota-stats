@@ -46,7 +46,7 @@ hero_header_name.innerText = heroName.toUpperCase();
 
 function get_hero_id(){
 
-    const api = "https://dotastats.bitvivaz.com/GetHeroes/";
+    const api = "http://dotastats.bitvivaz.com/GetHeroes/";
 
     fetch(api)
         .then(response => response.json())
@@ -67,7 +67,7 @@ function get_hero_id(){
 
 function get_match_data(hero_id){
 
-    const api = 'https://dotastats.bitvivaz.com/GetRecentMatches/?matches_requested=30&hero_id=' + hero_id;
+    const api = 'http://dotastats.bitvivaz.com/GetRecentMatches/?matches_requested=30&hero_id=' + hero_id;
 
     fetch(api)
         .then(response => response.json())
@@ -251,7 +251,7 @@ function set_match_data(x, data){
         resolve(items);
     }).then(function(items){
         
-        const api = 'https://dotastats.bitvivaz.com/GetItems/';
+        const api = 'http://dotastats.bitvivaz.com/GetItems/';
 
         fetch(api)
         .then(response => response.json())
@@ -265,7 +265,7 @@ function set_match_data(x, data){
         resolve(backpack);
     }).then(function(backpack){
 
-        const api = 'https://dotastats.bitvivaz.com/GetItems/';
+        const api = 'http://dotastats.bitvivaz.com/GetItems/';
 
         fetch(api)
         .then(response => response.json())
@@ -357,7 +357,7 @@ function set_match_data(x, data){
 
 function get_average_stats(hero_id){
 
-    const api = "https://dotastats.bitvivaz.com/GetAveragesOfLatestMatches/?matches_requested=30&hero_id=" + hero_id;
+    const api = "http://dotastats.bitvivaz.com/GetAveragesOfLatestMatches/?matches_requested=30&hero_id=" + hero_id;
 
     fetch(api)
         .then(response => response.json())
@@ -516,7 +516,7 @@ function add_to_ability_build(abilities){
 
 function get_win_rate(hero_id){
 
-    const api = "https://dotastats.bitvivaz.com/GetWinRate/?matches_requested=30&hero_id=" + hero_id;
+    const api = "http://dotastats.bitvivaz.com/GetWinRate/?matches_requested=30&hero_id=" + hero_id;
 
     fetch(api)
         .then(response => response.text())

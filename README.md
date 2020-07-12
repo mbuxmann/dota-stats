@@ -45,7 +45,7 @@ Currently the website only supports the resolution of 1920x1080
 
 ### Source Code
 
-Back-end:[GitHub](https://github.com/bitVivAZ/dota-stats-backend)
+Back-end: [GitHub](https://github.com/bitVivAZ/dota-stats-backend)
 
 ### Screenshots
 ![alt text][Welcome Page]
